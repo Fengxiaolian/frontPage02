@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<nav class="navbar navbar-inverse nav1">
+    <div class="div1">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand brand" href="#/home">CarShop</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="background: rgba(17,17,17,0.67)">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#/home">HOME</a></li>
+                <li><a href="#/shopList">SHOP LIST</a></li>
+                <li><a href="#/shopDetail">SHOP DETAIL</a></li>
+                <li><a href="#/wishList">WISHLIST</a></li>
+                <li><a href="#/shopCart">SHOP CART</a></li>
+                <li><a href="#/checkout">CHECKOUT</a></li>
+                <li>
+                    <div class="form-group has-feedback">
+                        <div class="input-group">
+                            <input type="text" class="form-control inpt1">
+                        </div>
+                        <span class="glyphicon glyphicon-search form-control-feedback icon1" aria-hidden="true"></span>
+                        <span class="sr-only">(search)</span>
+                    </div>
+                </li>
+                <li><a type="button" href="#/checkout"><span class="fa fa-shopping-cart icon1"></span></a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<!--主体内容-->
+<div class="container cont1">
+
+    <ng-view></ng-view>
+</div>
+
+<!--脚部信息-->
+<footer class="site-footer footer1">
+    <div class="container">
+        <div class="row desc">
+            <div class="col-md-4">
+                <h1>CarShop</h1>
+                <ul class="list-unstyled">
+                    <li><span class="glyphicon glyphicon-map-marker icon2"></span> 379 5th Ave New York, NYC 10018</li>
+                    <li><span class="glyphicon glyphicon-earphone icon2"></span> <a href="javascript:;">(+1) 96 716 6879</a></li>
+                    <li><span class="glyphicon glyphicon-envelope icon2"></span> <a href="javascript:;">contact@site.com</a></li>
+                </ul>
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h5>SHOP</h5>
+                                <ul class="list-unstyled">
+                                    <li><a href="javascript:;">Fast</a></li>
+                                    <li><a href="javascript:;">Market</a></li>
+                                    <li><a href="javascript:;">Safe</a></li>
+                                    <li><a href="javascript:;">Cheap</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>SUPPORT</h5>
+                                <ul class="list-unstyled">
+                                    <li><a href="javascript:;">Contact Us</a></li>
+                                    <li><a href="javascript:;">FAQ</a></li>
+                                    <li><a href="javascript:;">Privacy Policy</a></li>
+                                    <li><a href="javascript:;">Blog</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>MY ACCOUNT</h5>
+                                <ul class="list-unstyled">
+                                    <li><a href="javascript:;">Sign In</a></li>
+                                    <li><a href="javascript:;">Mycart</a></li>
+                                    <li><a href="javascript:;">My Wishlist</a></li>
+                                    <li><a href="javascript:;">Check Out</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <h5>NEWSLETTER</h5>
+                        <ul class="list-unstyled">
+                            <li>Subscribe now to get daily updates</li>
+                            <li>
+                                <div class="form-group has-feedback">
+                                    <div class="input-group">
+                                        <input type="email" class="form-control inpt2" placeholder="Your Email">
+                                        <span class="glyphicon glyphicon-envelope form-control-feedback icon3" aria-hidden="true"></span>
+                                        <span class="sr-only">(envelope)</span>
+                                    </div>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+                Copyright © 2017.Company name All rights reserved.
+        </div>
+    </div>
+</footer>
+
+
+</body>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/angular.min.1.4.6.js"></script>
+<script src="js/angular-route.min.js"></script>
+<script src="js/ui-bootstrap-tpls-2.5.0.min.js"></script>
+<script src="app.js"></script>
+</html>

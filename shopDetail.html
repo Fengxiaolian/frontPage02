@@ -1,0 +1,183 @@
+<div style="margin-top: 80px">
+    <div class="comm">
+        <div class="jumbotron jum1">
+            <p>SHOPDETAIL</p>
+            <div class="line"></div>
+        </div>
+    </div>
+
+    <div class="container" style="margin-top: 50px;margin-bottom: 50px;">
+        <div class="row">
+            <div class="col-md-7">
+                <div ng-controller="CarouselDemoCtrl">
+                    <div>
+                        <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+                            <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+                                <img ng-src="{{slide.image}}" class="img-responsive angImg1">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div style="border-bottom: 1px solid #dddddd;padding-bottom: 10px;margin-bottom: 30px;">
+                    <h2 style="margin-top: 0px;margin-bottom: 4px;">11</h2>
+                    <span>$11</span>
+                </div>
+                <div>
+                    <p style="line-height: 24px;">This event fires immediately when the show instance method is called.This event is fired immediately when the hide instance method has been called.This event is fired when the dropdown has finished being hidden from the user (will wait for CSS transitions, to complete).</p>
+                </div>
+                <div class="icon4" style="margin-top: 50px;padding-bottom: 60px; margin-bottom:26px;border-bottom: 1px solid rgba(145,143,145,0.51)">
+                    <div style="float: left;display: inline-block; margin-right: 30px">
+                        <div class="input-group" ng-init="a=1">
+                            <span class="input-group-addon" style="width:50px;height: auto;" ng-click="a==1?a=1:a=a-1">-</span>
+                            <input type="text" style="height: 50px; width: 70px;text-align: center" class="form-control" ng-model="a">
+                            <span class="input-group-addon" style="width:50px;height: auto;" ng-click="a==5?a=5:a=a+1">+</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div style="float:left;margin-right:10px; display:inline-block;background-color: #a7cb89;width: 150px;height: 50px;text-align: center;line-height: 50px;font-weight: bold;"><a href="#" style="color: #FFFFFF;">ADD TO CART</a></div>
+                        <div style="width: 96px;height: 50px;text-align: center;line-height: 50px;border: 2px solid #a7cb89;display: inline-block; font-size: 20px"><a href="#" style="color: #a7cb89;"><i class="glyphicon glyphicon-heart"></i></a></div>
+                    </div>
+
+                </div>
+                <div style="margin-top: 10px;margin-bottom: 16px;">
+                    <p>Tags:
+                        <a href="javascript:;" style="color: #a7cb89">Fast</a>
+                        <a href="javascript:;" style="color: #a7cb89">Market</a>
+                        <a href="javascript:;" style="color: #a7cb89">Safe</a>
+                        <a href="javascript:;" style="color: #a7cb89">Cheap</a>
+                    </p>
+                </div>
+                <!--<div ng-controller="CarouselDemoCtrl"><p>ID:{{currIndex}}</p></div>-->
+                <div>
+                    <a role="button" style="margin-right: 16px;color: #918f91"><i class="fa fa-facebook" style="font-size: 20px; color: #7d7b7d;"></i></a>
+                    <a href="javascript:;" style="margin-right: 16px;color: #918f91"><i class="fa fa-pinterest fa-1x" style="font-size: 20px; color: #7d7b7d;"></i></a>
+                    <a href="javascript:;" style="margin-right: 16px;color: #918f91"><i class="fa fa-twitter fa-1x" style="font-size: 20px; color: #7d7b7d;"></i></a>
+                    <a href="javascript:;" style="margin-right: 16px;color: #918f91"><i class="fa fa-google-plus fa-1x" style="font-size: 20px; color: #7d7b7d;"></i></a>
+                    <a href="javascript:;" style="margin-right: 16px;color: #918f91"><i class="fa fa-instagram fa-1x" style="font-size: 20px; color: #7d7b7d;"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-bottom: 50px;margin-top: 50px;" class="row">
+            <div class="col-md-12"><h1>Related Products</h1></div>
+        </div>
+        <div class="list det">
+            <div class="div5">
+                <div class="box">
+                    <img src="assy/2.jpg"/>
+                    <div class="content-text">
+                        <h3 class="title">11</h3>
+                        <span>$11</span>
+                        <ul class="icon">
+                            <li><a role="button"><i class="glyphicon glyphicon-eye-open" data-toggle="modal" data-target="#myModal"></i> </a> </li>
+                            <li><a role="button"><i class="glyphicon glyphicon-heart"></i> </a> </li>
+                            <li><a role="button"><i class="fa fa-shopping-cart"></i> </a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="div5">
+                <div class="box">
+                    <img src="assy/3.jpg"/>
+                    <div class="content-text">
+                        <h3 class="title">11</h3>
+                        <span>$11</span>
+                        <ul class="icon">
+                            <li><a role="button"><i class="glyphicon glyphicon-eye-open" data-toggle="modal" data-target="#myModal"></i> </a> </li>
+                            <li><a role="button"><i class="glyphicon glyphicon-heart"></i> </a> </li>
+                            <li><a role="button"><i class="fa fa-shopping-cart"></i> </a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="div5">
+                <div class="box">
+                    <img src="assy/4.jpg"/>
+                    <div class="content-text">
+                        <h3 class="title">11</h3>
+                        <span>$11</span>
+                        <ul class="icon">
+                            <li><a role="button"><i class="glyphicon glyphicon-eye-open" data-toggle="modal" data-target="#myModal"></i> </a> </li>
+                            <li><a role="button"><i class="glyphicon glyphicon-heart"></i> </a> </li>
+                            <li><a role="button"><i class="fa fa-shopping-cart"></i> </a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="div5">
+                <div class="box">
+                    <img src="assy/5.jpg"/>
+                    <div class="content-text">
+                        <h3 class="title">11</h3>
+                        <span>$11</span>
+                        <ul class="icon">
+                            <li><a role="button"><i class="glyphicon glyphicon-eye-open" data-toggle="modal" data-target="#myModal"></i> </a> </li>
+                            <li><a role="button"><i class="glyphicon glyphicon-heart"></i> </a> </li>
+                            <li><a role="button"><i class="fa fa-shopping-cart"></i> </a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="div5">
+                <div class="box">
+                    <img src="assy/6.jpg"/>
+                    <div class="content-text">
+                        <h3 class="title">11</h3>
+                        <span>$11</span>
+                        <ul class="icon">
+                            <li><a role="button"><i class="glyphicon glyphicon-eye-open" data-toggle="modal" data-target="#myModal"></i> </a> </li>
+                            <li><a role="button"><i class="glyphicon glyphicon-heart"></i> </a> </li>
+                            <li><a role="button"><i class="fa fa-shopping-cart"></i> </a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="div5">
+                <div class="box">
+                    <img src="assy/7.jpg"/>
+                    <div class="content-text">
+                        <h3 class="title">11</h3>
+                        <span>$11</span>
+                        <ul class="icon">
+                            <li><a role="button"><i class="glyphicon glyphicon-eye-open" data-toggle="modal" data-target="#myModal"></i> </a> </li>
+                            <li><a role="button"><i class="glyphicon glyphicon-heart"></i> </a> </li>
+                            <li><a role="button"><i class="fa fa-shopping-cart"></i> </a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="div5">
+                <div class="box">
+                    <img src="assy/8.jpg"/>
+                    <div class="content-text">
+                        <h3 class="title">11</h3>
+                        <span>$11</span>
+                        <ul class="icon">
+                            <li><a role="button"><i class="glyphicon glyphicon-eye-open" data-toggle="modal" data-target="#myModal"></i> </a> </li>
+                            <li><a role="button"><i class="glyphicon glyphicon-heart"></i> </a> </li>
+                            <li><a role="button"><i class="fa fa-shopping-cart"></i> </a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="div5">
+                <div class="box">
+                    <img src="assy/9.jpg"/>
+                    <div class="content-text">
+                        <h3 class="title">11</h3>
+                        <span>$11</span>
+                        <ul class="icon">
+                            <li><a role="button"><i class="glyphicon glyphicon-eye-open" data-toggle="modal" data-target="#myModal"></i> </a> </li>
+                            <li><a role="button"><i class="glyphicon glyphicon-heart"></i> </a> </li>
+                            <li><a role="button"><i class="fa fa-shopping-cart"></i> </a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
